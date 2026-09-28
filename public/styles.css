@@ -1,0 +1,112 @@
+:root{--ink:#10141c;--paper:#f7f8fa;--muted:#a6afbf;--blue:#364dff;--border:#303641}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:30px}
+body{margin:0;background:var(--ink);color:var(--paper);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:3px solid #8795ff;outline-offset:6px}
+.wrap{width:min(1280px,calc(100% - 112px));margin:auto}
+header{display:flex;align-items:center;justify-content:space-between;min-height:108px;border-bottom:1px solid var(--border)}
+.wordmark{font-size:38px;font-weight:800;letter-spacing:-4px}
+.wordmark span{font-size:12px;vertical-align:top;letter-spacing:0;margin:7px 0 0 7px;display:inline-block}
+nav{display:flex;gap:32px;align-items:center;font-size:14px}
+nav a:hover{color:#b6bfff}
+.nav-contact{border:1px solid #555d6c;border-radius:30px;padding:13px 20px}
+.nav-contact span{margin-left:16px}
+.hero{padding-top:74px}
+.eyebrow,.section-label,.small-label,.text-tags,.card-top{font-size:12px;font-weight:600;letter-spacing:1.7px;line-height:1.7}
+.eyebrow{display:flex;align-items:center;gap:12px;color:var(--muted)}
+.line{width:24px;height:2px;background:#7e8dff}
+h1{font-size:clamp(70px,11.6vw,165px);font-weight:500;letter-spacing:-.075em;line-height:1.06;margin:25px 0 40px}
+.period{color:#7d89ff}
+.hero-bottom{display:flex;justify-content:space-between;align-items:flex-start}
+.role{font-size:25px;letter-spacing:-.6px;margin:0 0 18px}
+.role span{color:#9caaff}
+.intro{font-size:19px;line-height:1.6;color:var(--muted)}
+.button{margin-top:15px;display:inline-flex;gap:65px;background:var(--blue);padding:18px 23px;border-radius:5px;font-size:15px;transition:background .2s}
+.button:hover{background:#5367ff}
+.hero-note{border-left:1px solid #49505e;padding-left:28px;margin-top:4px;width:270px}
+.small-label{color:#a5afc0}
+.hero-note p{line-height:1.9;font-size:16px}
+.hero-footer{margin-top:75px;padding:23px 0;border-top:1px solid var(--border);display:flex;justify-content:space-between;color:var(--muted);font-size:12px}
+.hero-footer span:last-child{letter-spacing:1.3px}
+.section{padding-top:100px;padding-bottom:100px}
+h2{font-size:clamp(34px,4vw,54px);font-weight:500;letter-spacing:-2px;line-height:1.1;margin:24px 0}
+.about{background:var(--paper);color:var(--ink)}
+.section-grid{display:grid;grid-template-columns:1fr 1.35fr;gap:90px}
+.about-copy p{font-size:17px;line-height:1.8;color:#525b6a;margin:0 0 23px}
+.about-copy .large-copy{font-size:25px;line-height:1.5;letter-spacing:-.5px;color:var(--ink)}
+.skills{display:flex;flex-wrap:wrap;gap:9px;padding-top:15px}
+.skills span{border:1px solid #cdd1d9;padding:9px 13px;border-radius:24px;font-size:13px}
+.section-top{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:36px}
+.section-top p{color:var(--muted);font-size:16px;line-height:1.6;margin-bottom:25px}
+.experience-row{display:grid;grid-template-columns:1fr 1.35fr;gap:90px;padding:37px 0;border-top:1px solid var(--border)}
+.company{font-size:27px;letter-spacing:-.6px;line-height:1.2}
+.tag{font-size:10px;letter-spacing:1px;color:#b4bdff;background:#262f60;padding:6px 8px;margin-left:15px;vertical-align:middle;border-radius:3px}
+h3{font-size:21px;font-weight:500;letter-spacing:-.4px;margin:0 0 14px}
+.experience-row p{color:var(--muted);font-size:16px;line-height:1.75;margin:0 0 20px}
+.text-tags{font-size:11px;color:#949fb2;letter-spacing:1px}
+.ventures{background:#191e28}
+.venture-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.venture-card{padding:34px;min-height:390px;display:flex;flex-direction:column;justify-content:space-between;border-radius:5px}
+.gflb{background:#364dff}
+.unison{background:#e1e7f0;color:#151a25}
+.card-top{display:flex;justify-content:space-between;font-size:11px;letter-spacing:1px}
+.venture-card h3{font-size:76px;font-weight:500;letter-spacing:-5px;margin:40px 0}
+.venture-card h3 span{font-size:30px;vertical-align:top;letter-spacing:0;margin-left:8px}
+.unison h3 span{float:right;font-size:58px;font-weight:400}
+h4{font-size:18px;font-weight:500;margin:0 0 12px}
+.card-bottom p{max-width:380px;font-size:15px;line-height:1.65;margin:0;opacity:.85}
+.contact-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:65px;align-items:center}
+.contact h2{font-size:clamp(36px,4.4vw,62px)}
+.contact em{font-family:Georgia,serif;font-weight:400;color:#a7b1ff}
+.contact-grid p{color:var(--muted);font-size:17px;line-height:1.7}
+.contact-pending{font-size:14px!important}
+.contact-link{display:flex;justify-content:space-between;border-bottom:1px solid #586173;padding:16px 0}
+.contact-link:hover{color:#a7b1ff}
+footer{min-height:110px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--muted)}
+footer .wordmark{color:var(--paper)}
+.skip{position:absolute;left:16px;top:-100px;padding:12px;background:white;color:black;z-index:10}
+.skip:focus{top:16px}
+@media(min-width:1500px){h1{font-size:165px}
+}
+@media(max-width:800px){.wrap{width:calc(100% - 48px)}
+header{min-height:85px}
+nav{gap:18px}
+nav>a:not(.nav-contact){display:none}
+.hero{padding-top:52px}
+h1{font-size:clamp(65px,13.5vw,110px);margin-bottom:28px}
+.role{font-size:20px}
+.hero-note{width:210px}
+.hero-footer{margin-top:48px;gap:20px;line-height:1.6}
+.hero-footer span:last-child{display:none}
+.section{padding-top:65px;padding-bottom:65px}
+.section-grid,.experience-row{grid-template-columns:1fr;gap:24px}
+.section-grid{gap:28px}
+.about-copy .large-copy{font-size:23px}
+.section-top{align-items:start}
+.section-top>p{display:none}
+.venture-grid{grid-template-columns:1fr}
+.contact-grid{grid-template-columns:1fr;gap:10px}
+.venture-card{min-height:350px}
+.hero-note{display:none}
+.hero-bottom{display:block}
+.company{font-size:24px}
+h2{letter-spacing:-1.4px}
+footer{gap:20px}
+.card-top{font-size:10px}
+.eyebrow{font-size:10px;letter-spacing:1.4px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+*{transition:none!important}
+}
+
+/* fomo internship brand system */
+:root{--ink:#0B091F;--paper:#EAEDFF;--muted:#B9C1DF;--blue:#516AF6;--electric:#4A36FF;--light:#ACB8F9;--border:#2B274C}
+body{background:radial-gradient(circle at 70% -8%,#221D4B 0,transparent 31rem),var(--ink)}
+.wordmark{letter-spacing:-.07em}.fomo-signature{font-size:.75rem!important;letter-spacing:.02em!important;color:var(--light);margin-left:.8rem!important;vertical-align:middle!important}
+nav a{text-transform:lowercase}nav a:hover{color:var(--light)}.nav-contact{border-color:#4C4770}.nav-contact:hover{background:var(--blue);color:#fff}
+.hero{position:relative}.hero::after{content:"";position:absolute;width:12rem;height:12rem;border-radius:50%;background:rgba(172,184,249,.11);filter:blur(2.5rem);right:8%;top:8rem;pointer-events:none}.eyebrow{text-transform:lowercase;color:var(--light)}.line{background:var(--blue)}.period{color:var(--light)}.role span{color:var(--light)}
+.button{background:var(--blue);border:1px solid var(--blue);border-radius:.7rem}.button:hover{background:var(--electric)}.hero-actions{display:flex;gap:.8rem;flex-wrap:wrap}.button-secondary{background:transparent;border-color:#4C4770;color:var(--paper)}.button-secondary:hover{background:#221D4B;border-color:var(--light)}
+.about{background:var(--paper);color:var(--ink)}.skills span{border-color:#C6CEF8;background:#fff}.tag{background:var(--blue);color:#fff;border-radius:999px}.project-link{display:inline-block;color:var(--light);font-size:.9rem;margin:0 0 1.25rem}.project-link:hover{color:#fff}
+.ventures{background:radial-gradient(circle at 75% 0,rgba(172,184,249,.2),transparent 30rem),#15112F}.venture-card{border-radius:1rem}.gflb{background:var(--blue)}.unison{background:var(--paper);color:var(--ink)}.contact em{color:var(--light)}
+@media(max-width:800px){.fomo-signature{display:inline!important}.hero-actions{display:grid}.button{justify-content:space-between}.hero::after{display:none}nav a[href="/tool/"]{display:none}}
